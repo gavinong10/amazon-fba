@@ -4,6 +4,7 @@ from lxml import html
 from pandas import DataFrame, Series
 from datetime import datetime
 import sqlite3
+from dateutil import parser
 # from sqlalchemy import create_engine
 
 entries = []
@@ -13,7 +14,7 @@ inboxmail = g.inbox().mail(sender="dealalerts@slickdeals.net")
 
 for mail in inboxmail:
     mail.fetch()
-    tree = lxml.html.fromstring(mail.html)
+    tree = html.fromstring(mail.html)
     mail.archive()
 
     links = tree.xpath('//a')
@@ -42,7 +43,8 @@ for mail in inboxmail:
 df = pd.DataFrame(entries)
 
 db = 'sqlite:///database/slickdeals.db'
-conn = sqlite3.connect(engine)
+db = 'database/slickdeals.db'
+conn = sqlite3.connect(db)
 c = conn.cursor()
 
 # Create table

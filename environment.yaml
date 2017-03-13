@@ -1,0 +1,47 @@
+name: py27
+channels:
+- !!python/unicode
+  'defaults'
+dependencies:
+- !!python/unicode
+  'libiconv=1.14=0'
+- !!python/unicode
+  'libxml2=2.9.4=0'
+- !!python/unicode
+  'libxslt=1.1.29=0'
+- !!python/unicode
+  'lxml=3.7.3=py27_0'
+- !!python/unicode
+  'mkl=2017.0.1=0'
+- !!python/unicode
+  'numpy=1.12.0=py27_0'
+- !!python/unicode
+  'openssl=1.0.2k=1'
+- !!python/unicode
+  'pandas=0.19.2=np112py27_1'
+- !!python/unicode
+  'pip=9.0.1=py27_1'
+- !!python/unicode
+  'python=2.7.13=0'
+- !!python/unicode
+  'python-dateutil=2.6.0=py27_0'
+- !!python/unicode
+  'pytz=2016.10=py27_0'
+- !!python/unicode
+  'readline=6.2=2'
+- !!python/unicode
+  'setuptools=27.2.0=py27_0'
+- !!python/unicode
+  'six=1.10.0=py27_0'
+- !!python/unicode
+  'sqlalchemy=1.1.6=py27_0'
+- !!python/unicode
+  'sqlite=3.13.0=0'
+- !!python/unicode
+  'tk=8.5.18=0'
+- !!python/unicode
+  'wheel=0.29.0=py27_0'
+- !!python/unicode
+  'zlib=1.2.8=3'
+prefix: !!python/unicode '/usr/bin/anaconda2/envs/py27'
+
